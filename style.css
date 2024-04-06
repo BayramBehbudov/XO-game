@@ -1,0 +1,83 @@
+body {
+    overflow: hidden;
+    display: flex;
+}
+
+.game-container {
+    width: calc(100% / 3 - 2px);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9ecec;
+}
+
+.game-board {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid #ebebeb; */
+}
+
+.game-board div {
+    width: calc(100% / 3 - 2px);
+    height: calc(100% / 3 - 2px);
+    border: 1px solid #0f0f0f;
+    cursor: pointer;
+    transition: 333ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    color: #862828;
+
+
+    &:hover {
+        background: #f8f8f8;
+    }
+}
+
+
+#resultText {
+    width: fit-content;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#leftContainer {
+    width: calc(100% / 3);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    background-color: #f7bfbf2d;
+}
+
+#rightContainer {
+    width: calc(100% / 3);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7bfbf2d;
+    flex-direction: column;
+}
+
+.winBack {
+    background-color: green;
+    color: white;
+}
+
+button {
+    background-color: rgb(211, 172, 172);
+    color: #0f0f0f;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 15px;
+    border: 1px red solid;
+    cursor: pointer;
+}
